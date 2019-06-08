@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio Codenation</title>
+    <style>
+        body{
+            background: lightskyblue;
+        }
+        .main{
+            background: white;
+            width: 900px;
+            height: 500px;
+            margin: 100px auto 0 auto;
+            padding: 30px;
+        }
+        .title{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 60px;
+            text-decoration: underline;
+        }
+        .fileSelection{
+            width: 100%;
+            height: 30px;
+            margin: 0;
+            border: 1px solid black;
+        }
+        .btn_submit{
+            margin: 100px 0 0 375px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #ffffff;
+            padding: 10px 20px;
+            background: -moz-linear-gradient(
+                top,
+                #077bd4 0%,
+                #081929);
+            background: -webkit-gradient(
+                linear, left top, left bottom,
+                from(#077bd4),
+                to(#081929));
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px solid #f7f9fa;
+            -moz-box-shadow:
+                0px 1px 3px rgba(000,000,000,0.5),
+                inset 0px 0px 1px rgba(255,255,255,0.5);
+            -webkit-box-shadow:
+                0px 1px 3px rgba(000,000,000,0.5),
+                inset 0px 0px 1px rgba(255,255,255,0.5);
+            box-shadow:
+                0px 1px 3px rgba(000,000,000,0.5),
+                inset 0px 0px 1px rgba(255,255,255,0.5);
+            text-shadow:
+                0px -1px 0px rgba(000,000,000,0.7),
+                0px 1px 0px rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="title">ENVIAR ARQUIVO</h1>
+        <form id="" name="" method="POST" action="https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=15db6ca14b9fe5bfadbccb323c78486d37152c0f" enctype="multipart/form-data">
+            <input type="file" name="answer" class="fileSelection"/>
+            <br>
+            <input type="submit" class="btn_submit" name="btnSubmit" value="SUBMETER" />
+        </form>
+    </div>
+</body
+>
+</html>
