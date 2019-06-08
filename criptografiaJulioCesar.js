@@ -9,18 +9,12 @@ axios.get(url).then(response => {
     const numeroCasas = dados.numero_casas
     const textoCriptografado = dados.cifrado
     const textoDescriptografado = decrypt(numeroCasas, textoCriptografado)
-    
     dados.decifrado = textoDescriptografado
-
     const resumosha1 = sha1(textoDescriptografado)
-
     dados.resumo_criptografico = resumosha1
-
-    
     fs.writeFile(__dirname + '/answer.json', JSON.stringify(dados), err => {
         console.log(err || 'Arquivo Atualizado')
     })
-
     //FUNÇÕES
     function decrypt(numeroCasas, textoCriptografado) {
         let textoDescriptografado = "";
